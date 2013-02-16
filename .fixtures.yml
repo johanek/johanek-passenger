@@ -1,0 +1,5 @@
+fixtures:
+  repositories:
+    apache: "git://github.com/johanek/johanek-apache.git"
+  symlinks:
+    passenger: "#{source_dir}"
