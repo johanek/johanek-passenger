@@ -15,7 +15,7 @@ class passenger::config {
     gpgkey    => 'http://passenger.stealthymonkeys.com/RPM-GPG-KEY-stealthymonkeys.asc'
   }
 
-  file { '/etc/httpd/conf.d/passenger.conf':
+  file { '/etc/httpd/conf.d/10-passenger.conf':
     ensure  => present,
     source  => 'puppet:///modules/passenger/passenger.conf',
     require => Class['apache::install'],
